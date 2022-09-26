@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="dachbord.css" />
+    <title>METAFIRE | DASHBORD</title>
+  </head>
+  <body>
+
+    <div class="centerr" id="centerr">
+      <div class="ring"></div>
+      <span class="loading">loading...</span>
+    </div>
+
+    <script>
+      const center = document.querySelector(".centerr");
+
+      document.addEventListener("DOMContentLoaded", (e) => {
+        setTimeout(() => {
+          center.classList.add("centerrr");
+        }, 4000);
+      });
+    </script>
+    <!-- Start Mainmanu Nav -->
+
+    <nav>
+      <div class="logo"><h1>FireKings</h1></div>
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="loadwh.html">WhitPaper</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#ido">Persale</a></li>
+        <li><a href="#game">Game</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+        <span class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-github"></i>
+        </span>
+      </ul>
+    </nav>
+
+    <script>
+      const mainMenu = document.querySelector(".mainMenu");
+      const closeMenu = document.querySelector(".closeMenu");
+      const openMenu = document.querySelector(".openMenu");
+      const menu_items = document.querySelectorAll("nav .mainMenu li a");
+
+      openMenu.addEventListener("click", show);
+      closeMenu.addEventListener("click", close);
+
+      // close menu when you click on a menu item
+      menu_items.forEach((item) => {
+        item.addEventListener("click", function () {
+          close();
+        });
+      });
+
+      function show() {
+        mainMenu.style.display = "flex";
+        mainMenu.style.top = "0";
+      }
+      function close() {
+        mainMenu.style.top = "-100%";
+      }
+    </script>
+
+    <!-- End Mainmanu Nav -->
+
+    <div id="about" class="content">
+      <h2 id="h2">What is MetaFire?</h2>
+      <br />
+      <br />
+      <p>
+        We help everyone joi Crypto Beginner? <br />
+        <br />
+        Just take the first step start a free Play To Earn Game
+        <br />
+        <br />
+        Crypto project? Run Airdrops & Game To get new users
+      </p>
+    </div>
+
+    <section id="components">
+      <div class="containerr" id="containerr">
+        <h2 style="color: white">
+          Step by step, you will understand the Crypto World
+        </h2>
+        <div class="video-componets">
+          <div class="video">
+            <video autoplay loop muted>
+              <source src="components.mp4" />
+            </video>
+            <div class="one">
+              <p>01</p>
+              <h4>Games</h4>
+            </div>
+            <div class="two">
+              <p>02</p>
+              <h4>NFT</h4>
+            </div>
+            <div class="three">
+              <p>03</p>
+              <h4>DeFi</h4>
+            </div>
+            <div class="four">
+              <p>04</p>
+              <h4>Metavers</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="about" class="content">
+      <h1 id="h2">Crypto World</h1>
+      <br />
+      <br />
+      <h3>seems to be a puzzle, we will help to solve it</h3>
+    </div>
+
+    <div class="content">
+      <h1 id="h2">It all starts with a game!</h1>
+      <br />
+      <br />
+      <h3>
+        Start with your first step, play the game in it is free and easy and
+        start collecting FIR and other tokens with ease
+      </h3>
+    </div>
+    <!-- START IDO --->
+    <main id="ido">
+      <h1 class="h1-1">We're launching soon</h1>
+      <div class="countdown">
+        <div class="countdown-block">
+          <span class="days time-elem">
+            <span class="top" id="days">00</span>
+            <span class="top-back">
+              <span>00</span>
+            </span>
+            <span class="bottom">00</span>
+            <span class="bottom-back">
+              <span>00</span>
+            </span>
+          </span>
+          <span class="title">Days</span>
+        </div>
+
+        <div class="countdown-block">
+          <span class="hours time-elem">
+            <span class="top" id="hours">00</span>
+            <span class="top-back">
+              <span>00</span>
+            </span>
+            <span class="bottom">00</span>
+            <span class="bottom-back">
+              <span>00</span>
+            </span>
+          </span>
+          <span class="title">Hours</span>
+        </div>
+
+        <div class="countdown-block">
+          <span class="minutes time-elem">
+            <span class="top" id="minutes" >00 </span>
+            <span class="top-back">
+              <span>00</span>
+            </span>
+            <span class="bottom">00</span>
+            <span class="bottom-back">
+              <span>00</span>
+            </span>
+          </span>
+          <span class="title">Minutes</span>
+        </div>
+
+        <div class="countdown-block">
+          <span class="seconds time-elem">
+            <span class="top" id="seconds">00</span>
+            <span class="top-back">
+              <span>00</span>
+            </span>
+            <span class="bottom">00</span>
+            <span class="bottom-back">
+              <span>00</span>
+            </span>
+          </span>
+          <span class="title">Seconds</span>
+        </div>
+      </div>
+    </main>
+
+    <div class="center">
+      <input
+        type="submit"
+        value="Conect Wallet"
+        id="loginButton"
+        onclick=""
+        class="mx-auto rounded-md p-2 bg-purple-500 text-white"
+      />
+      <form action="javascipt:void(0)">
+        <div class="txt_field text-lg text-gray-600 my-2" id="userWallet" >
+          <input type="text" 
+          class=" text-lg text-gray-600 my-2"
+           id="userWallet"
+            required />
+          <span></span>
+          <label></label>
+        </div>
+        <div class="txt_field ">
+          <input
+            type="text"
+            id="in"
+            onkeyup="calculateAmount(this.value)"
+            required
+          />
+          <span></span>
+          <label>BNB</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" id="out" required />
+          <span></span>
+          <label>FIR</label>
+        </div>
+
+        <input type="submit" value="Buy FIR" id="send-button" />
+        <br />
+      </form>
+    </div>
+
+    <!-- END IDO --->
+     
+     <!-- star game section --->
+   
+     <div class="games">
+      <h2 class="title" id="game">Game</h2>
+      <div class="conton">
+        <div class="pro-cards">
+          <div class="pro-imag"><img src="image/soon.jpg" alt="" srcset="" /></div>
+          <div class="pro-info">
+            <strong class="pro-title">
+              <span>???????</span>
+              <a href="#" class="more"> Downolad</a>
+            </strong>
+          </div>
+        </div>
+  
+  
+
+       
+      </div>
+    </div>
+
+      <!-- end game section --->
+
+     <!-- start team section --->
+    <div class="container" id="team">
+      <h1 class="h1-2">TEAM</h1>
+      <input type="radio" name="dot" id="one" />
+      <input type="radio" name="dot" id="two" />
+      <div class="main-card">
+        <div class="cards">
+
+
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="image/advi1.webp" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">ZaRaKi</div>
+                <div class="job">CEO & Web Devloper</div>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="image/advi1.webp" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Jasmine Carter</div>
+                <div class="job">UI Designer</div>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="image/advi1.webp" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Justin Chung</div>
+                <div class="job">Web Devloper</div>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="image/advi1.webp" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Appolo Reef</div>
+                <div class="job">Web Designer</div>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+         
+
+        
+        </div>
+      </div>
+      <div class="button">
+        <label for="one" class="active one"></label>
+        <label for="two" class="two"></label>
+      </div>
+    </div>
+
+<!-- end team section --->
+
+
+    <footer id="contact">
+      <h2 class="h2">Fund Us</h2>
+
+      <div class="middle">
+        <a class="btn" href="https://t.me/Hazemtouil">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a class="btn" href="https://t.me/Hazemtouil">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a class="btn" href="http://Wa.me/+21626027688">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a
+          class="btn"
+          href="https://www.facebook.com/hazemhazem.basyounibasyouni.3"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          class="btn"
+          href="https://www.facebook.com/hazemhazem.basyounibasyouni.3"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <h3 class="copy">Copyright@ <span>MetaFire 2022</span></h3>
+    </footer>
+
+    <script src="js/web3.js"></script>
+    <script src="js/time.js"></script>
+  </body>
+</html>
