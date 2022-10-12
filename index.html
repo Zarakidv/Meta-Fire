@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <link
+      type="text/css"
+      href="vendor/%40fortawesome/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,135 +17,569 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="dachbord.css" />
-     <link rel="icon" href="image/iconpage.jpeg" type="image/x-icon" />
+
+    <link type="text/css" href="css/neumorphism.css" rel="stylesheet" />
+    <link type="text/css" href="css/custom.css" rel="stylesheet" />
+    <link type="text/css" href="dark6512.css?11" rel="stylesheet" />
+    <link rel="icon" href="image/logo.png" type="image/x-icon" />
+
     <title>METAFIRE | DASHBORD</title>
   </head>
   <body>
-
-    <div class="centerr" id="centerr">
-      <div class="ring"></div>
-      <span class="loading">loading...</span>
+    <!-- Loader -->
+    <div align="center" id="loaderscr">
+      <div class="loadingio-spinner-spinner-njas260a78c">
+        <div class="ldio-yvw4zgk08bj">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </div>
-
+    <style type="text/css">
+      #loaderscr {
+        display: flex;
+        height: 100%;
+        position: fixed;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: rgba(17, 17, 17, 0.99);
+        z-index: 999;
+        animation: ldio-yvw4zgk08bj 3s;
+      }
+      @keyframes ldio-yvw4zgk08bj {
+        80% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .ldio-yvw4zgk08bj div {
+        left: 92.5px;
+        top: 91.25px;
+        position: absolute;
+        animation: ldio-yvw4zgk08bj linear 0.970873786407767s infinite;
+        background: #eca611;
+        width: 65px;
+        height: 2.5px;
+        border-radius: 32.5px / 1.25px;
+        transform-origin: 32.5px 33.75px;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(1) {
+        transform: rotate(0deg);
+        animation-delay: -0.9563831328792928s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(2) {
+        transform: rotate(5.373134328358209deg);
+        animation-delay: -0.9418924793508187s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(3) {
+        transform: rotate(10.746268656716419deg);
+        animation-delay: -0.9274018258223445s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(4) {
+        transform: rotate(16.119402985074625deg);
+        animation-delay: -0.9129111722938704s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(5) {
+        transform: rotate(21.492537313432837deg);
+        animation-delay: -0.8984205187653963s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(6) {
+        transform: rotate(26.865671641791046deg);
+        animation-delay: -0.8839298652369221s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(7) {
+        transform: rotate(32.23880597014925deg);
+        animation-delay: -0.869439211708448s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(8) {
+        transform: rotate(37.61194029850746deg);
+        animation-delay: -0.8549485581799738s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(9) {
+        transform: rotate(42.985074626865675deg);
+        animation-delay: -0.8404579046514997s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(10) {
+        transform: rotate(48.35820895522388deg);
+        animation-delay: -0.8259672511230256s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(11) {
+        transform: rotate(53.73134328358209deg);
+        animation-delay: -0.8114765975945515s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(12) {
+        transform: rotate(59.1044776119403deg);
+        animation-delay: -0.7969859440660774s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(13) {
+        transform: rotate(64.4776119402985deg);
+        animation-delay: -0.7824952905376031s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(14) {
+        transform: rotate(69.85074626865672deg);
+        animation-delay: -0.768004637009129s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(15) {
+        transform: rotate(75.22388059701493deg);
+        animation-delay: -0.7535139834806549s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(16) {
+        transform: rotate(80.59701492537313deg);
+        animation-delay: -0.7390233299521808s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(17) {
+        transform: rotate(85.97014925373135deg);
+        animation-delay: -0.7245326764237067s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(18) {
+        transform: rotate(91.34328358208955deg);
+        animation-delay: -0.7100420228952325s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(19) {
+        transform: rotate(96.71641791044776deg);
+        animation-delay: -0.6955513693667584s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(20) {
+        transform: rotate(102.08955223880596deg);
+        animation-delay: -0.6810607158382842s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(21) {
+        transform: rotate(107.46268656716418deg);
+        animation-delay: -0.6665700623098101s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(22) {
+        transform: rotate(112.83582089552239deg);
+        animation-delay: -0.652079408781336s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(23) {
+        transform: rotate(118.2089552238806deg);
+        animation-delay: -0.6375887552528618s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(24) {
+        transform: rotate(123.58208955223881deg);
+        animation-delay: -0.6230981017243877s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(25) {
+        transform: rotate(128.955223880597deg);
+        animation-delay: -0.6086074481959136s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(26) {
+        transform: rotate(134.32835820895522deg);
+        animation-delay: -0.5941167946674395s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(27) {
+        transform: rotate(139.70149253731344deg);
+        animation-delay: -0.5796261411389654s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(28) {
+        transform: rotate(145.07462686567163deg);
+        animation-delay: -0.5651354876104911s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(29) {
+        transform: rotate(150.44776119402985deg);
+        animation-delay: -0.550644834082017s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(30) {
+        transform: rotate(155.82089552238807deg);
+        animation-delay: -0.5361541805535429s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(31) {
+        transform: rotate(161.19402985074626deg);
+        animation-delay: -0.5216635270250688s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(32) {
+        transform: rotate(166.56716417910448deg);
+        animation-delay: -0.5071728734965947s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(33) {
+        transform: rotate(171.9402985074627deg);
+        animation-delay: -0.4926822199681205s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(34) {
+        transform: rotate(177.3134328358209deg);
+        animation-delay: -0.4781915664396464s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(35) {
+        transform: rotate(182.6865671641791deg);
+        animation-delay: -0.46370091291117227s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(36) {
+        transform: rotate(188.0597014925373deg);
+        animation-delay: -0.44921025938269815s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(37) {
+        transform: rotate(193.43283582089552deg);
+        animation-delay: -0.434719605854224s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(38) {
+        transform: rotate(198.80597014925374deg);
+        animation-delay: -0.42022895232574986s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(39) {
+        transform: rotate(204.17910447761193deg);
+        animation-delay: -0.40573829879727574s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(40) {
+        transform: rotate(209.55223880597015deg);
+        animation-delay: -0.39124764526880157s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(41) {
+        transform: rotate(214.92537313432837deg);
+        animation-delay: -0.37675699174032745s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(42) {
+        transform: rotate(220.29850746268656deg);
+        animation-delay: -0.36226633821185333s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(43) {
+        transform: rotate(225.67164179104478deg);
+        animation-delay: -0.3477756846833792s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(44) {
+        transform: rotate(231.044776119403deg);
+        animation-delay: -0.33328503115490504s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(45) {
+        transform: rotate(236.4179104477612deg);
+        animation-delay: -0.3187943776264309s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(46) {
+        transform: rotate(241.7910447761194deg);
+        animation-delay: -0.3043037240979568s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(47) {
+        transform: rotate(247.16417910447763deg);
+        animation-delay: -0.2898130705694827s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(48) {
+        transform: rotate(252.53731343283582deg);
+        animation-delay: -0.2753224170410085s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(49) {
+        transform: rotate(257.910447761194deg);
+        animation-delay: -0.2608317635125344s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(50) {
+        transform: rotate(263.2835820895522deg);
+        animation-delay: -0.24634110998406025s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(51) {
+        transform: rotate(268.65671641791045deg);
+        animation-delay: -0.23185045645558613s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(52) {
+        transform: rotate(274.02985074626866deg);
+        animation-delay: -0.217359802927112s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(53) {
+        transform: rotate(279.4029850746269deg);
+        animation-delay: -0.20286914939863787s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(54) {
+        transform: rotate(284.7761194029851deg);
+        animation-delay: -0.18837849587016373s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(55) {
+        transform: rotate(290.14925373134326deg);
+        animation-delay: -0.1738878423416896s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(56) {
+        transform: rotate(295.5223880597015deg);
+        animation-delay: -0.15939718881321546s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(57) {
+        transform: rotate(300.8955223880597deg);
+        animation-delay: -0.14490653528474134s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(58) {
+        transform: rotate(306.2686567164179deg);
+        animation-delay: -0.1304158817562672s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(59) {
+        transform: rotate(311.64179104477614deg);
+        animation-delay: -0.11592522822779307s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(60) {
+        transform: rotate(317.0149253731343deg);
+        animation-delay: -0.10143457469931894s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(61) {
+        transform: rotate(322.3880597014925deg);
+        animation-delay: -0.0869439211708448s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(62) {
+        transform: rotate(327.76119402985074deg);
+        animation-delay: -0.07245326764237067s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(63) {
+        transform: rotate(333.13432835820896deg);
+        animation-delay: -0.057962614113896534s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(64) {
+        transform: rotate(338.5074626865672deg);
+        animation-delay: -0.0434719605854224s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(65) {
+        transform: rotate(343.8805970149254deg);
+        animation-delay: -0.028981307056948267s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(66) {
+        transform: rotate(349.25373134328356deg);
+        animation-delay: -0.014490653528474133s;
+        background: #eca611;
+      }
+      .ldio-yvw4zgk08bj div:nth-child(67) {
+        transform: rotate(354.6268656716418deg);
+        animation-delay: 0s;
+        background: #eca611;
+      }
+      .loadingio-spinner-spinner-njas260a78c {
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+        overflow: hidden;
+        background: rgba(241, 242, 243, 0);
+      }
+      .ldio-yvw4zgk08bj {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translateZ(0) scale(1);
+        backface-visibility: hidden;
+        transform-origin: 0 0; /* see note above */
+      }
+      .ldio-yvw4zgk08bj div {
+        box-sizing: content-box;
+      }
+    </style>
     <script>
-      const center = document.querySelector(".centerr");
-
-      document.addEventListener("DOMContentLoaded", (e) => {
-        setTimeout(() => {
-          center.classList.add("centerrr");
-        }, 4000);
-      });
+      setTimeout(function () {
+        document.getElementById("loaderscr").style.display = "none";
+      }, 3000);
     </script>
-    <!-- Start Mainmanu Nav -->
+    <!-- Loader End -->
+    <header class="header-global">
+      <nav>
+        <div class="logo"><h1>MetaFire</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="loadwh.html">WhitPaper</a></li>
+          <li><a href="#about">Airdrop</a></li>
+          <li><a href="#game">Game</a></li>
+          <li><a href="#token">Token Info</a></li>
+          <li><a href="#roadmap">RoadMap</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#partnership">Partnership</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+          <span class="icons">
+            <i class="fab fa-telegram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fa-brands fa-medium"></i>
+          </span>
+        </ul>
+      </nav>
 
-    <nav>
-      <div class="logo"><h1>MetaFire</h1></div>
-      <div class="openMenu"><i class="fa fa-bars"></i></div>
-      <ul class="mainMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="loadwh.html">WhitPaper</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#ido">Persale</a></li>
-        <li><a href="#game">Game</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <div class="closeMenu"><i class="fa fa-times"></i></div>
-      </ul>
-    </nav>
+      <script>
+        const mainMenu = document.querySelector(".mainMenu");
+        const closeMenu = document.querySelector(".closeMenu");
+        const openMenu = document.querySelector(".openMenu");
+        const menu_items = document.querySelectorAll("nav .mainMenu li a");
 
-    <script>
-      const mainMenu = document.querySelector(".mainMenu");
-      const closeMenu = document.querySelector(".closeMenu");
-      const openMenu = document.querySelector(".openMenu");
-      const menu_items = document.querySelectorAll("nav .mainMenu li a");
+        openMenu.addEventListener("click", show);
+        closeMenu.addEventListener("click", close);
 
-      openMenu.addEventListener("click", show);
-      closeMenu.addEventListener("click", close);
-
-      // close menu when you click on a menu item
-      menu_items.forEach((item) => {
-        item.addEventListener("click", function () {
-          close();
+        // close menu when you click on a menu item
+        menu_items.forEach((item) => {
+          item.addEventListener("click", function () {
+            close();
+          });
         });
-      });
 
-      function show() {
-        mainMenu.style.display = "flex";
-        mainMenu.style.top = "0";
-      }
-      function close() {
-        mainMenu.style.top = "-100%";
-      }
-    </script>
+        function show() {
+          mainMenu.style.display = "flex";
+          mainMenu.style.top = "0";
+        }
+        function close() {
+          mainMenu.style.top = "-100%";
+        }
+      </script>
+    </header>
 
-    <!-- End Mainmanu Nav -->
-
-    <div id="about" class="content">
-      <h2 id="h2">What is MetaFire?</h2>
-      <br />
-      <br />
-      <p>
-        We help everyone joi Crypto Beginner? <br />
-        <br />
-        Just take the first step start a free Play To Earn Game
-        <br />
-        <br />
-        Crypto project? Run Airdrops & Game To get new users
-      </p>
-    </div>
-
-    <section id="components">
-      <div class="containerr" id="containerr">
-        <h2 style="color: white">
-          Step by step, you will understand the Crypto World
-        </h2>
-        <div class="video-componets">
-          <div class="video">
-            <video autoplay loop muted>
-              <source src="components.mp4" />
-            </video>
-            <div class="one">
-              <p>01</p>
-              <h4>Games</h4>
-            </div>
-            <div class="two">
-              <p>02</p>
-              <h4>NFT</h4>
-            </div>
-            <div class="three">
-              <p>03</p>
-              <h4>DeFi</h4>
-            </div>
-            <div class="four">
-              <p>04</p>
-              <h4>Metavers</h4>
+    <!-- Hero -->
+    <section class="section section bg-soft pb-5 overflow-hidden z-2">
+      <div class="container z-2">
+        <div class="row justify-content-center text-center pt-6">
+          <div class="col-lg-8 col-xl-8">
+            <h1 class="display-2 mb-3">What is MetaFire?</h1>
+            <p class="lead px-md-6 mb-5">
+              We help everyone joi Crypto Beginner?
+            </p>
+            <p class="lead px-md-6 mb-5">
+              Just take the first step start a free Play To Earn Game
+            </p>
+            <p class="lead px-md-6 mb-5">
+              Crypto project? Run Airdrops & Game To get new users
+            </p>
+            <div
+              class="d-flex flex-column flex-wrap flex-md-row justify-content-md-center mb-5"
+            >
+              <a href="#components" class="btn btn-primary mb-3 mb-lg-0 mr-3"
+                ><i class="fas fa-arrow-down mr-2"></i> Read More</a
+              >
+              &nbsp; &nbsp;
+              <a
+                href="#ido"
+                target="_blank"
+                class="btn btn-primary mb-3 mb-lg-0 mr-3"
+                ><i class="fas fa-funnel-dollar mr-2"></i> Buy Presale</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <div id="about" class="content">
-      <h1 id="h2">Crypto World</h1>
-      <br />
-      <br />
-      <h3>seems to be a puzzle, we will help to solve it</h3>
-    </div>
-
-    <div class="content">
-      <h1 id="h2">It all starts with a game!</h1>
-      <br />
-      <br />
-      <h3>
-        Start with your first step, play the game in it is free and easy and
-        start collecting FIR and other tokens with ease
-      </h3>
-    </div>
-    <!-- START IDO --->
-    <main id="ido">
-      <h1 class="h1-1">We're launching soon</h1>
+    <hr />
+    <hr />
+    <main class="main">
+      <h1 class="h1-1" id="ido">We're launching soon</h1>
       <div class="countdown">
         <div class="countdown-block">
           <span class="days time-elem">
@@ -171,7 +611,7 @@
 
         <div class="countdown-block">
           <span class="minutes time-elem">
-            <span class="top" id="minutes" >00 </span>
+            <span class="top" id="minutes">00 </span>
             <span class="top-back">
               <span>00</span>
             </span>
@@ -198,106 +638,258 @@
         </div>
       </div>
     </main>
-
-    <div class="center">
-      <input
-        type="submit"
-        value="Conect Wallet"
-        id="loginButton"
-        onclick=""
-        class="mx-auto rounded-md p-2 bg-purple-500 text-white"
-      />
-      <div class="form">
-        <div class="txt_field text-lg text-gray-600 my-2" id="userWallet" >
-          <input type="text" 
-          class=" text-lg text-gray-600 my-2"
-           id="userWallet"
-            required />
-          <span></span>
-          <label></label>
-        </div>
-        <div class="txt_field ">
-          <input
-            type="text"
-            id="in"
-            onkeyup="calculateAmount(this.value)"
-            required
-          />
-          <span></span>
-          <label>BNB</label>
-        </div>
-        <div class="txt_field">
-          <input type="text" id="out" required />
-          <span></span>
-          <label>FIR</label>
-        </div>
-
-        <input type="submit" value="Buy FIR" id="send-button" />
-        <br />
-      </div>
-    </div>
-
-    <!-- END IDO --->
-     
-     <!-- star game section --->
-   
-     <div class="games">
-      <h2 class="title">Game</h2>
-      <div class="conton">
-        <div class="pro-cards">
-          <div class="pro-imag"><img src="image/soon.jpg" alt="" srcset="" /></div>
-          <div class="pro-info">
-            <strong class="pro-title">
-              <span>???????</span>
-              <a href="#" class="more"> Play Now </a>
-            </strong>
+    <hr />
+    <hr />
+    <section id="components">
+      <div class="containerr" id="containerr">
+        <h2 style="color: white">
+          Step by step, you will understand the Crypto World
+        </h2>
+        <div class="video-componets">
+          <div class="video">
+            <video autoplay loop muted>
+              <source src="components.mp4" />
+            </video>
+            <div class="one">
+              <p>01</p>
+              <h4>Games</h4>
+            </div>
+            <div class="two">
+              <p>02</p>
+              <h4>NFT</h4>
+            </div>
+            <div class="three">
+              <p>03</p>
+              <h4>DeFi</h4>
+            </div>
+            <div class="four">
+              <p>04</p>
+              <h4>Metavers</h4>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <div id="about" class="content">
+      <h1 id="h2">Crypto World</h1>
+      <br />
+      <br />
+      <h3 class="h3">seems to be a puzzle, we will help to solve it</h3>
     </div>
-    
-    
-        <h2 class="title" id="game" >Game</h2>
-    <div class="content-wraper" >
-      <div class="content-desc">
-          <h1>THE GAME Fire</h1>
-          <p>Compete with <span>Fire</span> in this immense challenge and be the 
-              winner of all $FIR.</p>
-          <p>We are waiting for you, let's play , click the 
-              button below to get started.</p>
 
-          <button id="btn2"><a href= " ">PLAY NOW !</a></button>
+    <div class="content">
+      <h1 id="h2">It all starts with a game!</h1>
+      <br />
+      <br />
+      <h3 class="h3">
+        Start with your first step, play the game in it is free and easy and
+        start collecting FIR and other tokens with ease
+      </h3>
+    </div>
+
+    <section class="section section-lg pt-0" id="about">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <h2 class="h1">Airdrop Meta Fire Launched..</h2>
+        </div>
+        <div align="center">
+          <img src="/image/airdrop.jpg" width="100%" />
+        </div>
       </div>
+    </section>
 
-      <div class="rakuto"></div>
-  </div>
+    <section class="section section-lg pt-0" id="game">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <h2 class="h1">Let's Go Upcoming Sonn..</h2>
+          <hr />
+          <h1>THE GAME Fire</h1>
+          <hr />
+          <p class="lead px-md-6 mb-5">
+            Compete with <span>Fire</span> in this immense challenge and be the
+            winner of all $FIR.
+          </p>
+          <hr />
+          <p class="lead px-md-6 mb-5">
+            We are waiting for you, let's play , click the button below to get
+            started.
+          </p>
+        </div>
+        <div align="center">
+          <img src="image/image1.gif" width="80%" height="350px" />
+        </div>
+        <button id="btn2"><a href=" ">PLAY NOW !</a></button>
+      </div>
+    </section>
 
-      <!-- end game section --->
+    <section id="tokenomics" class="section section-lg pt-0">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <h2 class="h1" id="token">Token Details</h2>
+        </div>
+      </div>
+      <div align="center">
+        <p>NAME: Meta Fire</p>
+        <p>SYMBOL: FIR</p>
+        <p>DECIMAL: 18</p>
+        <p>NETWORK: BINANCE SMARTCHAIN</p>
+        <p>
+          CONTRACT ADDRESS:
+          <span>0xca6c112249ef00e2cef350e72f3aead333bbe5ff</span>
+        </p>
+        <a
+          href="https://bscscan.com/token/0xca6c112249ef00e2cef350e72f3aead333bbe5ff"
+          target="_blank"
+          class="btn btn-primary mr-3"
+          >BscScan</a
+        >
+        &nbsp;&nbsp;
+        <button class="btn btn-primary mr-3" onclick="copycontract()">
+          Copy Contract Address
+        </button>
+      </div>
+    </section>
+    <section class="section section-lg pt-0" id="roadmap">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <h2 class="h1">RoadMap</h2>
+        </div>
+        <div>
+          <!-- Timeline -->
+          <div class="timeline timeline-two px-3 px-sm-0">
+            <!-- Item 1 -->
+            <div class="row">
+              <!-- timeline item 1 center image & middle line -->
+              <div class="col-auto text-center flex-column d-none d-sm-flex">
+                <span
+                  class="my-lg-3 timeline-separator bg-primary shadow-inset rounded-circle"
+                >
+                </span>
+                <div class="row h-100">
+                  <div class="col middle-line">&nbsp;</div>
+                </div>
+              </div>
+              <!-- Timeline item 1 content-->
+              <div class="col-12 col-lg-12 col-xl-11 my-4">
+                <div class="card bg-primary shadow-inset bw-md border-0 p-4">
+                  <div class="card-body">
+                    <h3 class="h5 card-title">Phase 1</h3>
+                    <p class="card-text my-4"></p>
+                    <ul>
+                      <li>Initial Prototype + Smart Contract build ✔️</li>
+                      <li>Launch Social Media + Landing Website ✔️</li>
+                      <li>Launch Airdrop ✔️</li>
+                      <li>Audit Contract</li>
+                      <li>Public Pre-Sale</li>
+                      <li>Liquidity on Pancakeswap</li>
+                      <li>Listing on CoinMarketCap / CoinGecko</li>
+                      <li>Grow community</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="row">
+              <!-- timeline item 2 center image & middle line -->
+              <div class="col-auto text-center flex-column d-none d-sm-flex">
+                <span
+                  class="my-lg-3 timeline-separator bg-primary shadow-inset rounded-circle border-light"
+                >
+                </span>
+                <div class="row h-100">
+                  <div class="col middle-line">&nbsp;</div>
+                </div>
+              </div>
+              <!-- Timeline item 2 content -->
+              <div class="col-12 col-lg-12 col-xl-11 my-4">
+                <div class="card bg-primary shadow-inset bw-md border-0 p-4">
+                  <div class="card-body">
+                    <h3 class="h5 card-title">Phase 2</h3>
+                    <p class="card-text my-4"></p>
+                    <ul>
+                      <li>Expand developers team</li>
+                      <li>Influencers MetaFire</li>
+                      <li>Launch IDO 1</li>
+                      <li>1 CEX Listing</li>
+                      <li>Game Launch</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="row">
+              <!-- timeline item 3 center image & middle line -->
+              <div class="col-auto text-center flex-column d-none d-sm-flex">
+                <span
+                  class="my-lg-3 timeline-separator bg-primary shadow-inset rounded-circle border-light"
+                >
+                </span>
+                <div class="row h-100">
+                  <div class="col middle-line">&nbsp;</div>
+                </div>
+              </div>
+              <!-- Timeline item 3 content -->
+              <div class="col-12 col-lg-12 col-xl-11 my-4">
+                <div class="card bg-primary shadow-inset bw-md border-0 p-4">
+                  <div class="card-body">
+                    <h3 class="h5 card-title">Phase 3</h3>
+                    <p class="card-text my-4"></p>
+                    <ul>
+                      <li>Token Burn</li>
+                      <li>More options to grow and improve</li>
+                      <li>Launch IDO 2</li>
+                      <li>Unlock Token</li>
+                      <li>More CEX Listings</li>
+                      <li>Inclusion of Token on other networks</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Timeline Item 4 -->
 
-     <!-- start team section --->
-    <div class="container" id="team">
+            <!-- Timeline Item 5 -->
+
+            <!-- Timeline Item 6 -->
+
+            <!-- Timeline Item 7 -->
+
+            <!-- Timeline Item 8 -->
+          </div>
+          <!-- End of Timeline -->
+        </div>
+      </div>
+    </section>
+
+    <div class="containe" id="team">
       <h1 class="h1-2">TEAM</h1>
       <input type="radio" name="dot" id="one" />
       <input type="radio" name="dot" id="two" />
       <div class="main-card">
         <div class="cards">
-
-
-           <div class="card">
+          <div class="card">
             <div class="content">
               <div class="img">
-                <img src="image/zaraki.jpg" alt="" />
+                <img src="image/isaiah.png" alt="" />
               </div>
               <div class="details">
                 <div class="name">ZaRaKi</div>
                 <div class="job">CEO & Web Devloper</div>
               </div>
-             
+              <div class="media-icons">
+                <a href="https://t.me/Zarrakii">
+                  <i class="fab fa-telegram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/meta-fire-9124b4253"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
             </div>
           </div>
 
-
-         <div class="card">
+          <div class="card">
             <div class="content">
               <div class="img">
                 <img src="image/gd.png" alt="" />
@@ -306,27 +898,39 @@
                 <div class="name">Hakim</div>
                 <div class="job">Game Developer</div>
               </div>
-    
+              <div class="media-icons">
+                <a href="https://t.me/HakimTechnology">
+                  <i class="fab fa-telegram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/mwlite/in/hakim-technology-40b6a91a0"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
             </div>
           </div>
 
-
-            <div class="card">
+          <div class="card">
             <div class="content">
               <div class="img">
                 <img src="image/fd.png" alt="" />
               </div>
               <div class="details">
                 <div class="name">Maria</div>
-                <div class="job">Marketing</div>
+                <div class="job">Partnerships</div>
               </div>
-          
+              <div class="media-icons">
+                <a href="https://t.me/mariadoglaz">
+                  <i class="fab fa-telegram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/maria-doglaz-791a97223"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
 
-
-        
         <div class="cards">
           <div class="card">
             <div class="content">
@@ -337,7 +941,14 @@
                 <div class="name">Oliver</div>
                 <div class="job">Full Stack Engineer</div>
               </div>
-        
+              <div class="media-icons">
+                <a href="https://t.me/OliverVolt">
+                  <i class="fab fa-telegram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/oliver-volt-1842b5211"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
             </div>
           </div>
 
@@ -350,45 +961,250 @@
                 <div class="name">Misheal</div>
                 <div class="job">Public Relations Manager</div>
               </div>
-        
+              <div class="media-icons">
+                <a href="https://t.me/mishealk">
+                  <i class="fab fa-telegram"></i
+                ></a>
+              </div>
             </div>
           </div>
-
         </div>
-        </div>
+      </div>
       <div class="button">
         <label for="one" class="active one"></label>
         <label for="two" class="two"></label>
       </div>
     </div>
 
-<!-- end team section --->
-
-
-    <footer id="contact">
-      <h2 class="h2">Fund Us</h2>
-
-      <div class="middle">
-        <a class="btn" href="https://t.me/metafirre">
-          <i class="fab fa-telegram"></i>
-        </a>
-        
-        <a class="btn" href="https://t.me/metafiree">
-          <i class="fab fa-telegram"></i>
-        </a>
-        
-        <a class="btn" href="https://youtube.com/channel/UCRMw3XsPTgAMa425Qtyb4tQ">
-          <i class="fab fa-youtube"></i>
-        </a>
-        
-        <a class="btn" href="https://twitter.com/MetaFire3">
-          <i class="fab fa-twitter"></i>
-        </a>
+    <hr />
+    <section class="section section-lg pt-0" id="partnership">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <h2 class="h1">Partnership</h2>
+        </div>
+        <div class="row">
+          <div class="col-6" align="center">
+            <img src="image/bscan.png" width="250px" alt="PadSwap" />
+          </div>
+          <div class="col-6" align="center">
+            <img src="image/bana.png" width="250px" alt="Nomics" />
+          </div>
+        </div>
       </div>
-      <h3 class="copy">Copyright@ <span>MetaFire 2022</span></h3>
-    </footer>
+    </section>
 
-    <script src="js/web3.js"></script>
-    <script src="js/time.js"></script>
+    <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
+      <div class="container" id="contact">
+        <div class="row">
+          <div class="col-lg-4">
+            <p>
+              Meta Fire is here with great strength & ability to help DEFI
+              investors to gain access to unique projects & utilities, giving
+              the best to add more value to the Blockchain technology.
+            </p>
+            <ul class="d-flex list-unstyled mb-5 mb-lg-0">
+              <li class="mr-2">
+                <a
+                  href="https://twitter.com/MetaFire3"
+                  target="_blank"
+                  class="btn btn-icon-only btn-pill btn-primary"
+                  aria-label="twitter social link"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Follow safutrendz on Twitter"
+                >
+                  <span aria-hidden="true" class="fab fa-twitter"></span>
+                </a>
+              </li>
+              <li class="mr-2">
+                <a
+                  href="https://t.me/metafirre"
+                  target="_blank"
+                  class="btn btn-icon-only btn-pill btn-primary"
+                  aria-label="dribbble social link"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Subscribe on Telegram"
+                >
+                  <span aria-hidden="true" class="fab fa-telegram"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://youtube.com/channel/UCRMw3XsPTgAMa425Qtyb4tQ"
+                  target="_blank"
+                  class="btn btn-icon-only btn-pill btn-primary"
+                  aria-label="github social link"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="GitHub Repo"
+                >
+                  <span aria-hidden="true" class="fab fa-youtube"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-5 mb-lg-0">
+            <h5>COMPANY</h5>
+            <ul class="footer-links list-unstyled mt-2">
+              <li class="mb-1">
+                <a class="p-2" target="_blank" href="loadwh.html">WhitPaper</a>
+              </li>
+              <li class="mb-1">
+                <a class="p-2" target="_blank" href="about">Aidrop</a>
+              </li>
+              <li class="mb-1">
+                <a class="p-2" target="_blank" href="#game">Game</a>
+              </li>
+              <li class="mb-1">
+                <a class="p-2" target="_blank" href="#token">Token Info</a>
+              </li>
+              <li class="mb-1">
+                <a class="p-2" target="_blank" href="#roadmap">RoadMap</a>
+              </li>
+              <li class="mb-1">
+                <a class="p-2" target="_blank" href="#team">Team</a>
+              </li>
+              <li class="mb-1">
+                <a class="p-2" target="_blank" href="#partnership"
+                  >Partnership</a
+                >
+              </li>
+              <li class="mb-1">
+                <a class="p-2" target="_blank" href="mailto:metafiree@gmail.com"
+                  >Mail Us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="p-2"
+                  target="_blank"
+                  href="https://twitter.com/MetaFire3"
+                  >News</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+            <h5>CONNECT WITH US</h5>
+            <p class="text-gray font-small mt-2">Join us to stay updated</p>
+            <form action="#">
+              <div class="form-row mb-2">
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block"
+                    data-loading-text="Sending"
+                  >
+                    <a
+                      href="https://t.me/metafiree"
+                      target="_blank"
+                      style="color: black !important"
+                      ><span>Join Telegram Group</span></a
+                    >
+                  </button>
+
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block"
+                    data-loading-text="Sending"
+                  >
+                    <a
+                      href="https://t.me/metafirre"
+                      target="_blank"
+                      style="color: black !important"
+                      ><span>Join Telegram Channel</span></a
+                    >
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a
+              href="index.html"
+              target="_blank"
+              class="d-flex justify-content-center"
+            >
+              <img
+                src="image/logo.png"
+                height="100px"
+                width="100px"
+                class="mb-3"
+                alt="safutrendz Logo"
+              />
+            </a>
+            <div
+              class="d-flex text-center justify-content-center align-items-center"
+              role="contentinfo"
+            >
+              <p class="font-weight-normal font-small mb-0">
+                Copyright © MetaFire <span class="current-year">2022</span>. All
+                rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      //   function copycontract() {
+      //     navigator.clipboard.writeText(
+      //       "0xca6c112249ef00e2cef350e72f3aead333bbe5ff"
+      //     );
+      //     alert("Copied!!");
+      // //     Swal.fire({
+      // //   title: 'success',
+      // //   text: 'Goood',
+      // //   icon: 'success',
+      // //   confirmButtonText: 'Ok'
+      // // })
+
+      //   }
+
+      function copycontract() {
+        navigator.clipboard.writeText(
+          "0xca6c112249ef00e2cef350e72f3aead333bbe5ff"
+        );
+        Swal.fire({
+     position: 'top-end',
+    icon: 'success',
+    title: 'Copied!',
+     showConfirmButton: false,
+    timer: 2000
+        })
+      }
+    </script>
+    <!-- Core -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/headroom.js/dist/headroom.min.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="vendor/onscreen/dist/on-screen.umd.min.js"></script>
+    <script src="vendor/nouislider/distribute/nouislider.min.js"></script>
+    <script src="vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/prismjs/prism.js"></script>
+
+    <script async defer src="../buttons.github.io/buttons.js"></script>
+    <script src="../cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="../cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="../cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <!-- Neumorphism JS -->
+    <script src="assets/js/neumorphism.js"></script>
+    <script src="assets/js/pie3860.js?v=1"></script>
+    <script src="assets//js/time.js"></script>
   </body>
 </html>
