@@ -93,7 +93,7 @@
 //     init();
 // });
 
-var countDownDate = new Date("novembre 21, 2022 00:00:00").getTime();
+var countDownDate = new Date("novembre 20, 2022 00:00:00").getTime();
 var x = setInterval(function() {
 var now = new Date().getTime();
 var distance = countDownDate - now;
